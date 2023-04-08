@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <title>Probability and Statistics</title>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <meta name="author" content="Probability and Statistics">
+    <!--Bootstrap Styles-->
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap5/css/bootstrap.min.css')}}">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Royal University of Phnom Penh</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-end">
+                <h2>Student Name :</h2>
+            </div>
+            <div class="col-6 text-start">
+                <h2>Heat Koemnak</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-end">
+                <h4>Class :</h4>
+            </div>
+            <div class="col-6 text-start">
+                <h4>M5</h4>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-6 text-end">
+                <h5>Data :</h5>
+            </div>
+
+            <div class="col-6 text-start text-decoration">
+     
+                <h6>{{list_data}}</h6>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-end">
+                <h5>Mean :</h5>
+            </div>
+            <div class="col-6 text-start ">
+
+                <h5>{{mean}}</h5>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 text-end">
+                <h5>Median :</h5>
+            </div>
+            <div class="col-6 text-start ">
+                <h5>{{median}}</h5>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static',filename='bootstrap5/js/bootstrap.bundle.min.js')}}"></script>
+
+</body>
+
+</html>
