@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <title>Probability and Statistics</title>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <meta name="author" content="Probability and Statistics">
+    <!--Bootstrap Styles-->
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap5/css/bootstrap.min.css')}}">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="w-75">
+                <div class="row">
+                    <div class="col-12 text-center pt-3">
+                        <img src="{{url_for('static',filename='asset/rupp_logo.png')}}" height="50px" alt="logo">
+                        <h5 class="pt-2">Royal Unversity of Phnom Penh</h5>
+                    </div>
+                </div>
+                <div class="m-3 row">
+                    <label for="inputName" class="col-sm-3 textsm-end col-form-label">Name:</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" type="text" value="Heat Koemnak" readonly id="inputName">
+                    </div>
+                </div>
+                <div class="m-3 row">
+                    <label for="inputClass" class="col-sm-3 textsm-end col-form-label">Class:</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" type="text" value="M5" readonly id="inputClass">
+                    </div>
+                </div>
+                <div class="m-3 row">
+                    <label for="inputData" class="col-sm-3 text sm-end col-form-label">Data:</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" type="text" value="{{list_data}}" readonly id="inputData">
+                    </div>
+                </div>
+                <div class="m-3 row">
+                    <div class="col-12 text-center">
+                        <img src="/plot.png" class="img-fluid"alt=" boxplot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='bootstrap5/js/bootstrap.bundle.min.js')}}"></script>
+</body>
+
+</html>
